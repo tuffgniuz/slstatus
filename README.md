@@ -1,4 +1,8 @@
-My configurations for slstatus
+!()[./bar.png]
+
+slstatus
+---
+[slstatus](https://tools.suckless.org/slstatus/) is a status monitor for window managers that use WM_NAME or stdin to fill the status bar.
 
 Usage
 --------
@@ -11,6 +15,10 @@ git clone https://github.com/manu-febie/slstatus.git
 ```bash
 sudo make clean install
 ```
+Dependencies
+---
+
+I use colored text output for slstatus and in order for this to work you need to have dwm patched with [status2d](https://dwm.suckless.org/patches/status2d/dwm-status2d-20200508-60bb3df.diff)
 
 I don't use any display manager so I add `slstatus` inside my `.xinitrc` file. Always make sure you `exec dwm` at the end of the file.
 
@@ -25,13 +33,8 @@ Example configurations
 /* config.h */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ keymap,    " keyb %s ",      NULL			  },
-	{ wifi_perc, " wifi %s%% ",    "wlp2s0"       },
-	{ cpu_freq,  " cpu %s ",       NULL           },
-	{ ram_used,  " mem %s",        NULL           },
-	{ separator, "/",              NULL           },
-	{ ram_free,  "%s ",             NULL           },
-	{ datetime,  " %s ",           "%b %d %Y, %R" },
+	{ wifi_perc, "^c#89b482^ wifi %s%% ",    "wlp2s0"       },
+	{ datetime,  "^c#d3869b^ %s ",           "%b %d %Y, %R" },
 };
 ```
 
