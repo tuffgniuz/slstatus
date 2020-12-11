@@ -1,4 +1,4 @@
-!()[./bar.png]
+![bar](./bar.png)
 
 slstatus
 ---
