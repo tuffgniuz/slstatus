@@ -65,13 +65,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ uptime,        "^c#e78a4e^ up %s ",        NULL           }, 
-	/* { disk_used,     "^c#d3869b^ %s ",           "/dev/sda2" }, */
-	{ cpu_freq,		 "^c#e3a84e^ cpu %s ",       NULL           },
-	{ ram_used,		 "^c#7daea3^ mem %s",        NULL           },
-	{ separator,	 "^c#7daea3^/",              NULL           },
-	{ ram_free,		 "^c#7daea3^%s ",            NULL           },
-	{ wifi_perc,	 "^c#89b482^ wlp2s0 %s%% ",    "wlp2s0"       },
-	{ wifi_essid,    "^c#89b482^ %s ",           "wlp2s0"       },
-	{ datetime,		 "^c#d3869b^ %s ",           "%b %d %Y, %R" },
+	{ uptime,        "^c#d9dbda^ up %s ",        NULL           }, 
+	{ cpu_freq,		 "^c#bbd5d4^ cpu %s ",       NULL           },
+	{ ram_used,		 "^c#d5d5bb^ mem %s",        NULL           },
+	{ separator,	 "^c#d5d5bb^/",              NULL           },
+	{ ram_free,		 "^c#d5d5bb^%s ",            NULL           },
+	{ wifi_perc,	 "^c#bbd5bd^ wlp2s0 %s%% ",    "wlp2s0"       },
+	{ wifi_essid,    "^c#bbd5bd^ %s ",           "wlp2s0"       },
+	{ datetime,		 "^c#c8c7dc^ %s ",           "%b %d %Y, %R" },
 };
